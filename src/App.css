@@ -1,38 +1,142 @@
-.App {
+* {
+  padding: 0;
+  margin: 0;
+}
+.gambarusn {
+  background-image: url(/public/asset/usnkeren.jpg);
+  background-repeat: repeat-x;
+  background-size: cover;
+  background-position: cover;
+  height: 100px;
+  width: 100%;
+}
+
+.gambarusn span {
+  text-shadow: 1px 1px 6px #fff;
+  font-weight: bold;
+  color: black;
+  font-size: 1rem;
+  transform: scaleX(4);
+}
+.logo {
+  height: 60px;
+}
+.search-box {
+  background-color: lightblue;
+  height: 35px;
+  padding: 5px 0px;
+  border-radius: 50px;
+}
+.search-box input {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+/* end style navbar */
+
+/* hover navbar */
+a.nav-link {
+  color: #fff;
+}
+a.nav-link:hover {
+  color: #ccc;
+  border-bottom: thin solid gray;
+}
+
+@media screen and (max-width: 992px) {
+  a.nav-link:hover {
+    border-bottom: none;
+  }
+}
+
+/* hover navbar end */
+
+/* card start */
+.card img {
+  height: 200px;
+  object-fit: cover;
+}
+/* card end */
+
+/* style galeri foto */
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+.gambar {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* end style galeri foto */
+
+/* footer start */
+
+/* font awesome hover */
+.fontawesome {
+  color: #ccc;
+  letter-spacing: 15px;
+}
+.fontawesome:hover {
+  color: #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* font hover end */
+
+.hover a {
+  color: #ccc;
+  padding: 0px 15px;
+}
+
+.hover a:hover {
+  border-bottom: 2px solid gray;
+  display: inline-block;
+  color: #fff;
+}
+.profil {
+  background-image: url(/public/asset/usnkeren.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: cover;
+  border-radius: 10px;
+}
+.uppercase {
+  text-transform: uppercase;
+  width: 80%;
+  text-align: justify;
+  line-height: 30px;
+}
+@media screen and (max-width: 756px) {
+  .visi,
+  h2 {
+    text-align: center;
+  }
+  .uppercase {
+    width: 100%;
+    padding: 10px;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.uppercase span {
+  font-weight: bold;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.visi,
+.sejarah {
+  background-color: rgba(255, 255, 255, 0.8);
 }
