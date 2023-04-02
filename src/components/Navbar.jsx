@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div>
-      <nav className="navbar navbar-expand-lg bg-body-primary bg-primary sticky-top">
+    <div className="sticky-top">
+      <nav className="navbar navbar-expand-lg bg-body-primary bg-primary ">
         <div className="container-fluid">
           <Link to={"/"} className="navbar-brand text-white active">
             HMPS ILKOM
@@ -20,18 +20,18 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className="nav-item dropdown">
-                <Link className="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <Link to={"/profile"} className="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Profil
                 </Link>
                 <ul className="dropdown-menu">
                   <li>
-                    <Link to={"/profile"} className="dropdown-item" title="profil">
+                    <Link to={"/profile/"} className="dropdown-item" title="profil">
                       visi, Misi dan Sejarah
                     </Link>
                   </li>
 
                   <li>
-                    <Link to={"/profile"} className="dropdown-item">
+                    <Link to={"/profile/"} className="dropdown-item">
                       Struktur Organisasi
                     </Link>
                   </li>

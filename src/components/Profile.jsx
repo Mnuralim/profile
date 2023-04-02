@@ -8,7 +8,7 @@ const Profile = () => {
           <h3 className="fw-bold">PROFIL HMPS-IK FTI USN KOLAKA</h3>
         </div>
         <div className="row text-dark lh-4 mt-3">
-          <div className="visi">
+          <div id="visi" className="visi">
             <h2 className="fw-bold text-primary">Visi</h2>
             <ol className="uppercase">
               <li>
@@ -31,9 +31,11 @@ const Profile = () => {
               iste?
             </p>
             <div>
-              <h2 className="fw-bold text-primary">Struktur Organisasi</h2>
+              <h2 id="struktur" className="fw-bold text-primary">
+                Struktur Organisasi
+              </h2>
               <a href="#">
-                <img className="gambar" src="./asset/struktur (2).png" alt="struktur" />
+                <img className="gambar" src="/asset/struktur (2).png" alt="struktur" />
               </a>
             </div>
           </div>
